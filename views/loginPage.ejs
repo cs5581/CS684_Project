@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Login</title>
+
+</head>
+
+<body> 
+
+    
+    <div class="login-section">
+        <h1>Log in:</h1>
+        <h1>Enter your username and password.</h1>
+
+        <form action="/login" method="post">
+
+        <label for="username">Username:</label>
+
+        <input type="text" name="username" placeholder="Username" required>
+
+        <label for="password">Password:</label>
+
+        <input type="password" name="password" placeholder="Password">
+
+        <input type="submit" value="login">
+
+        <label id="errorLabel"></label>
+
+    </form>
+
+    <a href="http://localhost:3000/signUp">New user? Sign up here.</a>
+
+    </div>
+
+</body>
