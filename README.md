@@ -2,8 +2,8 @@
 
 ## Team Stallion
 
-Dashboard
-Login
-Sign-in
-User Database
+Dashboard\
+Login\
+Sign-in\
+User Database\
 Test cases
