@@ -22,7 +22,7 @@ We created a web application using frontend frameworks, backend frameworks and A
 
 ## Test features
 
-## Responsibilties
+## Responsibilities
 - Preyasha and Pooja worked on Front-end UI for web application.
 - Erica and Christopher worked on API calls and Back-end database.
 
