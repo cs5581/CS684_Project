@@ -29,16 +29,20 @@ We created a web application using frontend frameworks, backend frameworks and A
 ## Screenshots
 
 ## Github links
-[Erica](https://github.com/deathloser)
-[Preyasha](https://github.com/preyasha2810)
-[Pooja](https://github.com/pkb94)
+[Erica](https://github.com/deathloser)\
+[Preyasha](https://github.com/preyasha2810)\
+[Pooja](https://github.com/pkb94)\
 [Christopher](https://github.com/cs5581)
 
 ## Email
-[Erica]<eab5@njit.edu>
-[Preyasha]<pp54@njit.edu>
-[Pooja]<pk73@njit.edu>
-[Christopher]<cs558@njit.edu>
+- Erica
+<eab5@njit.edu>\
+- Preyasha
+<pp54@njit.edu>\
+- Pooja
+<pk73@njit.edu>\
+- Christopher
+<cs558@njit.edu>
 
 
 
