@@ -36,11 +36,11 @@ We created a web application using frontend frameworks, backend frameworks and A
 
 ## Email
 - Erica
-<eab5@njit.edu>\
+<eab5@njit.edu>
 - Preyasha
-<pp54@njit.edu>\
+<pp54@njit.edu>
 - Pooja
-<pk73@njit.edu>\
+<pk73@njit.edu>
 - Christopher
 <cs558@njit.edu>
 
