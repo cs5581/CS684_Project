@@ -2,11 +2,12 @@
 
 ## Team Stallion
 
-## Author Name
-# Christopher Simon
-# Erica Butts
-# Pooja Balaji
-# Preyasha Patel
+# Authors
+
+Christopher Simon
+Erica Butts
+Pooja Balaji
+Preyasha Patel
 
 # Sprint 1 
 
@@ -17,3 +18,4 @@ Login\
 Sign-in\
 User Database\
 Test cases
+Test Report
