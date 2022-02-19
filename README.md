@@ -3,10 +3,10 @@
 ## Team Stallion
 
 ## Author Name
-> Christopher Simon
-> Erica Butts
-> Pooja Kittanakere Balaji
-> Preyasha Patel
+# Christopher Simon
+# Erica Butts
+# Pooja Balaji
+# Preyasha Patel
 
 # Sprint 1 
 
