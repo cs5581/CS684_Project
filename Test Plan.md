@@ -8,11 +8,13 @@
 - [Github links](#github-links)
 - [Email](#email)
 
-### Author names
-Erica Butts\
-Preyasha Patel\
-Pooja Kittanakere Balaji\
+### Authors
+
 Christopher Simon
+Erica Butts\
+Pooja Kittanakere Balaji\
+Preyasha Patel\
+
 
 ## Introduction
 We created a web application using frontend frameworks, backend frameworks and API endpoint.
@@ -23,28 +25,29 @@ We created a web application using frontend frameworks, backend frameworks and A
 ## Test features
 
 ## Responsibilities
-- Preyasha and Pooja worked on Front-end UI for web application.
-- Erica and Christopher worked on API calls and Back-end database.
+- Each Member of the team worked on each concept and collaborated/helped the other team members for completing the Project
 
 ## Screenshots
 
 ## Github links
-[Erica](https://github.com/deathloser)\
-[Preyasha](https://github.com/preyasha2810)\
-[Pooja](https://github.com/pkb94)\
 [Christopher](https://github.com/cs5581)
+[Erica](https://github.com/deathloser)\
+[Pooja](https://github.com/pkb94)\
+[Preyasha](https://github.com/preyasha2810)\
+
 
 ## Email
-- Erica
-<eab5@njit.edu>
-- Preyasha
-<pp54@njit.edu>
-- Pooja
-<pk73@njit.edu>
 - Christopher
 <cs558@njit.edu>
 
+- Erica
+<eab5@njit.edu>
 
+- Pooja
+<pk73@njit.edu>
+
+- Preyasha
+<pp54@njit.edu>
 
 
 
