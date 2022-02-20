@@ -17,10 +17,10 @@ Preyasha Patel
 
 
 ## Introduction
-We created a web application using frontend frameworks, backend frameworks and API endpoint.
-1. The Front-end UI using html, css and react.
-2. The Restful API middle tier using express with platform NodeJs.
-3. The Back-end database using SQLite.
+- We created a web application using frontend frameworks, backend frameworks and API endpoint.
+    - The Front-end UI using html, css and react.
+    - The Restful API middle tier using express with platform NodeJs.
+    - The Back-end database using SQLite.
 
 - We created different pages:
     - Dashboard
