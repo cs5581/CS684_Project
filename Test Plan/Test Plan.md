@@ -58,6 +58,8 @@ We created a web application using frontend frameworks, backend frameworks and A
 
 ## Screenshots
 
+<strong> Users Database <strong>
+
 ## Github links
 [Christopher](https://github.com/cs5581)\
 [Erica](https://github.com/deathloser)\
