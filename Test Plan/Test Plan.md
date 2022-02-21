@@ -8,7 +8,6 @@
 - [Testing Tasks](#testing-tasks)
 - [Responsibilties](#responsibilities)
 - [Schedule](#schedule)
-- [Screenshots](#screenshots)
 - [Github Links](#github-links)
 - [Email](#email)
 
