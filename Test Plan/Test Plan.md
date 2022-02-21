@@ -20,18 +20,18 @@ Pooja Kittanakere Balaji\
 Preyasha Patel
 
 ## Introduction
-- We created a web application using frontend frameworks, backend frameworks and API endpoint.
+- We are going to create a web application using frontend frameworks, backend frameworks and API endpoint.
     - The Front-end UI using html and css.
     - The Restful API middle tier using express with platform NodeJs.
     - The Back-end database using SQLite.
 
-- We created different pages:
+- Following are the pages for application:
     - Dashboard
     - Login
     - Sign Up
     - New User
 
-- We tested UX, API middle tier and database using mocha.
+- UX, API middle tier and database going to be tested using mocha as well as manually.
 
 ## Test Items
 - Username Input
@@ -45,7 +45,7 @@ Preyasha Patel
 - Registration Form
 
 ## Test Features
-Following are the test features that we tested:
+Following are the test features to be tested:
 - Entering information for existing user
 - Data for both correct/incorrect username and password
 - Registration for a new user
@@ -53,7 +53,7 @@ Following are the test features that we tested:
 - Redirecting to the other pages
 
 ## Expected Response
-Listed below are the responses for particular items:
+Listed below are the responses that should be expected for particular items:
 1. Username is found in the database and login is Success, the user will be directed to the login success page. 
 2. User is prompted to re-enter credentials for incorrect login.
 3. When a new user signs up, the user is added to the database and the user can login.
@@ -65,29 +65,18 @@ Listed below are the responses for particular items:
 9. When user credentials are verified user is prompted for successful login and to landing page for login.
 
 ## Testing Tasks 
-- Test plan prepared
-- Executed the tests
-- Manual test cases performed
-- Prepared test summary report
+- Test plan and report to be prepared
+- Execution of the tests to be done
+- Manual test cases should be performed
 
 ## Responsibilities
-- Each member of the team worked on each and every concepts and collaborated with each other.
-- We helped the other team members for completing the project.
-- We faced many of the challenges during the implementation of the application
-  - Later on, all four of us tried to solve those obstacles by contributing our time and effort.
+- Each member of the team going to work on each and every concepts and collaborate with each other.
+- We are going to help the other team members for completing the project.
+- If we face any challenges during the implementation of the application
+  - Then, all four of us will try to solve those obstacles by contributing our time and effort.
 
 ## Schedule
-- It took two to three days for designing the report and other two weeks were spend for coding and testing.
-
-## Screenshots
-
-![userdb](https://user-images.githubusercontent.com/45910402/155037835-d541f47b-a7cb-46a1-9c31-d5ebfd9858b1.png)
-![welcome](https://user-images.githubusercontent.com/45910402/155038312-e6426a7e-2081-4438-859c-d7d668bd6f65.png)
-![username](https://user-images.githubusercontent.com/45910402/155037836-2d796934-1a97-443d-9471-a345314a0604.png)
-![login](https://user-images.githubusercontent.com/45910402/155037829-d1500aaa-a402-408c-ae62-198313ccd8ec.png)
-![existing](https://user-images.githubusercontent.com/45910402/155037827-2dfde6c3-9dad-46fd-b814-ff6c2197c341.png)
-![signup](https://user-images.githubusercontent.com/45910402/155037830-f734d8c2-f76f-4702-bf3d-1a05071735c6.png)
-![sucess](https://user-images.githubusercontent.com/45910402/155037832-c5b2ae8f-0124-452d-ad67-762b961c51be.png)
+- It will take two to three days for designing the report and other two weeks for coding and testing.
 
 ## Github Links
 [Christopher](https://github.com/cs5581)\
