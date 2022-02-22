@@ -7,6 +7,7 @@
 - [Expected Response](#expected-response)
 - [Testing Tasks](#testing-tasks)
 - [Responsibilties](#responsibilities)
+- [Pass/Fail Criteria](#pass/fail-criteria)
 - [Schedule](#schedule)
 - [Github Links](#github-links)
 - [Email](#email)
@@ -69,10 +70,15 @@ Listed below are the responses that should be expected for particular items:
 - Manual test cases should be performed
 
 ## Responsibilities
+- We all will be working on test plan, test reports and test cases for the project.
 - Each member of the team going to work on each and every concepts and collaborate with each other.
 - We are going to help the other team members for completing the project.
 - If we face any challenges during the implementation of the application
   - Then, all four of us will try to solve those obstacles by contributing our time and effort.
+
+## Pass/Fail Criteria
+- All the major functionality of the application should work as intended and the pass percentage of test cases should be more than 90%.
+- There should not be any critical bugs.
 
 ## Schedule
 - It will take two to three days for designing the report and other two weeks for coding and testing.
@@ -82,7 +88,6 @@ Listed below are the responses that should be expected for particular items:
 [Erica](https://github.com/deathloser)\
 [Pooja](https://github.com/pkb94)\
 [Preyasha](https://github.com/preyasha2810)
-
 
 ## Email
 - Christopher
