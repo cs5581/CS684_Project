@@ -22,7 +22,7 @@ Test plan\
 Test Report
 
 
-## Screenshots of our appliaction
+## Screenshots of our application
 
 ![userdb](https://user-images.githubusercontent.com/45910402/155037835-d541f47b-a7cb-46a1-9c31-d5ebfd9858b1.png)
 ![welcome](https://user-images.githubusercontent.com/45910402/155038312-e6426a7e-2081-4438-859c-d7d668bd6f65.png)
