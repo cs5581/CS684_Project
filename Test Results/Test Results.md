@@ -8,7 +8,9 @@ System: Web app
 
 Designed by: Erica Butts
 
-Executed by: Pooja Balaji, Christopher Simon	Test Case Name:
+Executed by: Pooja Balaji, Christopher Simon, Preyasha Patel	
+
+Test Case Name:
 
 Subsystem: Log in/Sign up API
 
