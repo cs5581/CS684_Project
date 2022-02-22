@@ -7,7 +7,7 @@
 - [Expected Response](#expected-response)
 - [Testing Tasks](#testing-tasks)
 - [Responsibilties](#responsibilities)
-- [Pass/Fail Criteria](#pass/fail-criteria)
+- [Pass/Fail Criteria](#pass-criteria)
 - [Schedule](#schedule)
 - [Github Links](#github-links)
 - [Email](#email)
