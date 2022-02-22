@@ -81,7 +81,7 @@ Listed below are the responses that should be expected for particular items:
 - There should not be any critical bugs.
 
 ## Schedule
-- It will take two to three days for designing the report and other two weeks for coding and testing.
+- It will take the first week for designing the report and test cases and the other two weeks for coding and testing.
 
 ## Github Links
 [Christopher](https://github.com/cs5581)\
