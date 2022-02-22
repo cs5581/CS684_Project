@@ -25,3 +25,12 @@
 | 8.          | Verify the time taken to log in with a valid username and password.	                                        | Performance & Positive Testing |
 | 9.          | Verify if there is a ‘Cancel’ button available to erase the entered text.                                   | Usability Testing |
 | 10.         | Verify the login page and all its controls in different browsers.                                           |	Browser Compatibility & Positive Testing. |
+
+
+## Test Cases for Sign Out Page: 
+
+
+| Sr. No      | Functional Test Cases       | Test Case Type - Positive/Negavite Test Case  |
+| :---        |    :----:                   |          ---: |                                
+|	1.          | Verify if a user will be able to sign out succesfully after successfully logging in.	                          | Positive | 
+| 2.          | Verify if a user can sign out from home landing page.	                              | Positive |
