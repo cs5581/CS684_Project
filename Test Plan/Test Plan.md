@@ -31,7 +31,9 @@ Preyasha Patel
     - Sign Up
     - New User
 
-- UX, API middle tier and database going to be tested using mocha as well as manually.
+
+## Approach
+- UX, API middle tier and database going to be tested manually and possibly using mocha for backend testing.
 
 ## Test Items
 - Username Input
