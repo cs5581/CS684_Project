@@ -8,7 +8,7 @@ System: Web app
 
 Designed by: Erica Butts
 
-Executed by: Pooja Balaji, Christopher Simon, Preyasha Patel	
+Executed by: Christopher Simon, Pooja Balaji,  Preyasha Patel	
 
 Test Case Name:
 
