@@ -22,11 +22,17 @@ app.use(express.json())
 
 app.use(express.urlencoded({extended: true}))
 
+app.use(session(
+    {secret: 'okie dokie',
+    cookie: {maxAge: 60000
+    }
+}
+))
+
 
 
 app.set('view engine','ejs')
 
-var myArray = [];
 
 //for decoding info in the URL. false chooses the querystring library
 app.use(bodyParser.urlencoded({extended:false}))
@@ -57,6 +63,15 @@ app.post('/',function(request,response) {
 app.get('/login',function(request,response) {
     response.render('loginPage')
     console.log("loginPage");
+    console.log(request.session.id)
+
+
+
+})
+
+app.get('/signOut',function(request,response) {
+    response.render('signOut')
+    console.log(request.session.id)
 
 
 
@@ -76,9 +91,13 @@ app.post('/login',function(request,response) {
             }
             if (results.length > 0) {
                 //start a session
+                request.session['username'] = username;
+                console.log("your username is " + request.session['username'])
+
                 console.log("success!")
                 response.render('dashboard')
-                
+
+
             }
             else {
                 response.send("Incorrect Username and/or password!")
@@ -118,10 +137,9 @@ app.post('/signUp',function(request,response){
 
                 connection.query('INSERT INTO users(username,password) VALUES(?,?)',[username,password],function(error,results,fields) {
                     if (error) {
-                        throw error
+                        console.log(error)
                     }
 
-                    console.log(results)
 
                     response.send("You successfully signed up!")
 
@@ -131,7 +149,7 @@ app.post('/signUp',function(request,response){
                 })
                 
             }
-            response.end();
+            // response.end();
 
         });
 
