@@ -21,7 +21,7 @@ app.locals.moment = moment;
 const connection = mysql.createConnection({
     host: 'https://web.njit.edu/mysql/phpMyAdmin/index.php?token=c6467e6e65aa6976fbce5543e0ef945b#PMAURL-24:prefs_manage.php?db=&table=&server=1&target=&token=c6467e6e65aa6976fbce5543e0ef945b',
     user: 'cs558@webhost01.arcs.njit.edu',
-    password: 'CpuCrusher18$',
+    password: 'password',
     database: 'Users'
 })
 
