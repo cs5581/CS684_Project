@@ -3,27 +3,88 @@
 <head>
     <title>Sign Up</title>
 
+            <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://www.codeply.com/go/o7Ys06Z3c9"/
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+        <!--End Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://www.markuptag.com/bootstrap/5/css/bootstrap.min.css" />
+
+
+
+     <style>
+    .form-control{
+        border-color: black;
+            }
+    </style>
+
+
+
 </head>
 
 <body> 
 
-    
-    <div class="login-section">
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top fixed-top">
+        <a class="navbar-brand" href="/" style="font-weight: 700;
+        font-size: 24px; border-bottom-color: Black;"> <span style="color: Green;" >Stallion</span>-news</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+ <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <div class="navbar-nav navbar-right">
+                        <ul class="navbar-nav mx-auto">
+                             <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false" href="/login">Sign in</a>
+                                <div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
+                <form class="form-horizontal" method="post" accept-charset="UTF-8">
+                    <input class="form-control login" type="text" name="username" placeholder="Username.."><br>
+                    <input class="form-control login" type="password" name="password" placeholder="Password.."><br>
+                    <input class="btn btn-primary" type="submit" name="submit" value="Login">
+                </form>
+            </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/signUp">Sign up</a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/aboutUs">About Us</a>
+                            </li>
+                        </ul>
+                    </div><!--alignment_-->
+    </nav>
+
+
+<!--
+<div class="center-signup">
+  <p><div class="login-section">
         <h1>Sign up:</h1>
 
-        <h1>Set your username and password.</h1>
+        <h1>Set your username and password:</h1>
 
         <form action="/signUp" method="post">
-
+        <li style="list-style-type: none;">
         <label for="username">Username:</label>
 
-        <input type="text" name="username" placeholder="Username" required>
+        <input type="text" name="username" placeholder="Username.." required>
+        </li>
 
+
+        <li style="list-style-type: none;">
         <label for="password">Password:</label>
-
-        <input type="password" name="password" placeholder="Password">
-
-        <input type="submit" value="sign up">
+        <input type="password" name="password" placeholder="Password..">
+        </li>
+        <input type="submit" value="Sign up">
 
         <label id="errorLabel"></label>
         
@@ -32,6 +93,60 @@
 
     </form>
 
-    </div>
+    </div></p>
+</div> -->
+
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="enclosure" style="text-align: center;
+    padding-top: 50px; padding-right: 200px; border-style: solid; border-color: green;">
+
+
+
+    <div class="signup-form">
+    <form action="/examples/actions/confirmation.php" method="post" class="form-horizontal">
+        <div class="row">
+            <div class="col-8 offset-4">
+                <h2>Sign Up</h2>
+            </div>  
+        </div>          
+        <div class="form-group row">
+            <label class="col-form-label col-4">Username</label>
+            <div class="col-8">
+                <input type="text" class="form-control" name="username" required="required">
+            </div>          
+        </div>
+        <div class="form-group row">
+            <label class="col-form-label col-4">Email Address</label>
+            <div class="col-8">
+                <input type="email" class="form-control" name="email" required="required">
+            </div>          
+        </div>
+        <div class="form-group row">
+            <label class="col-form-label col-4">Password</label>
+            <div class="col-8">
+                <input type="password" class="form-control" name="password" required="required">
+            </div>          
+        </div>
+        <div class="form-group row">
+            <label class="col-form-label col-4">Confirm Password</label>
+            <div class="col-8">
+                <input type="password" class="form-control" name="confirm_password" required="required">
+            </div>          
+        </div>
+        <div class="form-group row">
+            <div class="col-8 offset-4">
+                <p><label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a>.</label></p>
+                <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+            </div>  
+        </div>            
+    </form>
+</div>
+    
+</div>
 
 </body>
