@@ -19,15 +19,21 @@ app.locals.moment = moment;
 
 //Connection to DB
 const connection = mysql.createConnection({
-    host: 'https://web.njit.edu/mysql/phpMyAdmin/index.php?token=c6467e6e65aa6976fbce5543e0ef945b#PMAURL-24:prefs_manage.php?db=&table=&server=1&target=&token=c6467e6e65aa6976fbce5543e0ef945b',
-    user: 'cs558@webhost01.arcs.njit.edu',
-    password: 'password',
-    database: 'Users'
+    host: 'localhost',
+    user: 'root',
+    password: 'overalls',
+    database: 'usersDB'
 })
 
 // template engine  
 app.use(express.static('public'))
 app.use(express.json())
+app.use(session(
+    {secret: 'okie dokie',
+    cookie: {maxAge: 60000
+    }
+}
+))
 app.set('view engine','ejs')
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -43,7 +49,7 @@ app.get('/login',function(request,response) {
 
 })
 
-    app.post('/login',function(request,response) {
+app.post('/login',function(request,response) {
     let username = request.body.username;
     let password = request.body.password;
     // response.send(`username: ${request.body.username} password: ${request.body.password}`)
@@ -57,22 +63,33 @@ app.get('/login',function(request,response) {
             }
             if (results.length > 0) {
                 //start a session
+                request.session['username'] = username;
+                console.log("your username is " + request.session['username'])
+
                 console.log("success!")
-                response.render('dashboard')
+
+                response.status(200)
+                .send({message: "Log in success!"})
                 
-            }
-            else {
-                response.send("Incorrect Username and/or password!")
 
             }
-            response.end();
+            else {
+                // response.send("Incorrect Username and/or password!")
+                response.status(401)
+                .send({message: "Incorrect Username or password"})
+                
+
+            }
+            
 
         });
 
     }         
     else {
-        respond.send("Please enter Username and Password")
-    }
+        response.status(401)
+        .send({message: "Enter a username and password!"})
+        
+        }
 
 })
 
@@ -92,34 +109,35 @@ app.post('/signUp',function(request,response){
             }
             if (results.length > 0) {
                 
-                response.send("the username already exists. Pick another one. ")
-                
+                response.status(401)
+                .send({message: "The username already exists!"})
+                                
             }
             else {
 
                 connection.query('INSERT INTO users(username,password) VALUES(?,?)',[username,password],function(error,results,fields) {
                     if (error) {
-                        throw error
+                        console.log(error)
                     }
 
-                    console.log(results)
-
-                    response.send("You successfully signed up!")
-
+                    response.status(200)
+                    .send({message: "Successfully signed up!"})
+                    
                     //start a session
 
                     
                 })
                 
             }
-            response.end();
+            // response.end();
 
         });
 
     }         
     else {
-        response.send("Please enter Username and Password")
-    }
+        response.status(401)
+        .send({message: "Please enter username and password!"})
+            }
 
 
 })
