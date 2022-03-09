@@ -1,4 +1,5 @@
 body{
+    height: 100%;
     margin: 0;
     font-family: sans-serif;
     background-color: rgba(245, 238, 238, 0.89);
@@ -83,4 +84,31 @@ h2{
 
 .Hover-effect:hover::after {
     transform: scale(1, 1);
+}
+
+/**Sign up */
+
+
+
+.login-section { 
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.center-signup{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enclosure{
+    text-align: center;
+    padding-top: 130px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 130px;
+    border-style: solid;
+    border-color: green;
 }
