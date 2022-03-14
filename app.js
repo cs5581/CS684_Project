@@ -2,6 +2,8 @@ const express = require('express')
 const app=express()
 const mysql = require('mysql')
 const session = require('express-session')
+const axios = require('axios')
+
 
 const NewsAPI = require('newsapi');
 const newsapi = new NewsAPI('API_KEY');
@@ -49,6 +51,71 @@ app.get('/login',function(request,response) {
 
 })
 
+app.get('/myUsername',(req,res)=>{
+    if(req.session['username']){
+        res.send(req.session['username'])
+    } else {
+        res.send('youre not logged in')
+    }
+    
+})
+
+app.get('/mySubjects',(req,res)=>{
+    var subjects = [];
+    var username = req.body['username'];
+
+    connection.query('SELECT * FROM mySubjects WHERE username = ?',[username], function(error, results, fields) {
+        if (error) {
+            throw error
+        }
+        if (results.length > 0) {
+
+            results.forEach((result)=>{
+                subjects.push(result.subject)
+            })
+
+            subjects.forEach((subject)=>{
+                //call API FOR EACH SUBJECT   
+
+            })
+
+
+            
+            res.status(200)
+            .send({subjects})
+            
+        }
+        else {
+            // response.send("Incorrect Username and/or password!")
+            res.status(401)
+            .send({message: "Nothing is here."})
+            
+        }
+    });
+})
+
+app.post('/mySubjects',(req,res)=>{
+    //replace with current session USERNAME
+    var username = req.body['username'];
+    var subject = req.body['subject'];
+
+
+            connection.query('INSERT INTO mySubjects(username,subject) VALUES(?,?)',[username,subject],function(error,results,fields) {
+                if (error) {
+                    console.log(error)
+                }
+
+  
+                res.status(200)
+                .send(results)
+                
+                
+            })
+            
+})
+
+
+
 app.post('/login',function(request,response) {
     let username = request.body.username;
     let password = request.body.password;
@@ -69,7 +136,7 @@ app.post('/login',function(request,response) {
                 console.log("success!")
 
                 response.status(200)
-                .send({message: "Log in success!"})
+                .send({message: `LOG IN SUCCESS ${username}`})
                 
 
             }
