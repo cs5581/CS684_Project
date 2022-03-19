@@ -4,7 +4,6 @@ const mysql = require('mysql')
 const session = require('express-session')
 const axios = require('axios')
 
-
 const NewsAPI = require('newsapi');
 const newsapi = new NewsAPI('API_KEY');
 
@@ -51,6 +50,7 @@ app.get('/login',function(request,response) {
 
 })
 
+
 app.get('/myUsername',(req,res)=>{
     if(req.session['username']){
         res.send(req.session['username'])
@@ -59,6 +59,13 @@ app.get('/myUsername',(req,res)=>{
     }
     
 })
+
+app.get('/myDashboard',(req,res)=>{
+    res.render('myDashboard')
+
+})
+
+
 
 app.get('/mySubjects',(req,res)=>{
     var subjects = [];
@@ -69,34 +76,49 @@ app.get('/mySubjects',(req,res)=>{
             throw error
         }
         if (results.length > 0) {
-
             results.forEach((result)=>{
-                subjects.push(result.subject)
+                console.log(result.subject)
             })
 
-            subjects.forEach((subject)=>{
-                //call API FOR EACH SUBJECT   
+            const responses = results.map(({subject})=>{
+                return axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=${subject}&apiKey=c311a717afc94a8a8ee4c60a86822b08`)
 
             })
 
+            var newsArray = [];
 
+
+            Promise.all(responses).then((news)=>{
+                //I don't know how to automate this....
+                // console.log(news[0].data.articles)
+                // console.log(news[1].data.articles)
+
+                newsArray.push(news[0].data.articles)
+                newsArray.push(news[1].data.articles)
+                console.log(newsArray)
+                return newsArray;
+
+            })
             
-            res.status(200)
-            .send({subjects})
-            
+           res.status(200).send({results})
+        //    res.render('myArticles',{articles:newsArray})
+
         }
         else {
-            // response.send("Incorrect Username and/or password!")
             res.status(401)
             .send({message: "Nothing is here."})
             
         }
     });
+
+
 })
 
 app.post('/mySubjects',(req,res)=>{
     //replace with current session USERNAME
     var username = req.body['username'];
+    // var username = request.session['username']
+    // console.log("your username is " + req.session['username'])
     var subject = req.body['subject'];
 
 

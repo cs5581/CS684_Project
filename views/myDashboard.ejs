@@ -1,0 +1,36 @@
+<div class="myUsername">
+
+
+</div>
+
+<div class="myDashboard">
+
+    <div class="myCategories">
+        <h2>Add A Category</h2>
+
+    </div>
+
+    <div class="addNewCategory">
+        <form action="/mySubjects" method="POST">
+            <label for="username">Enter your username:</label><br>
+            <input type="text" name="username"><br>
+            <label for="username">Enter a subject to add (Sports/Business/Technology/General/Health/Science/Entertainment):</label>
+            <input type="text" name="subject">
+            <input type="submit" value="Add New Category">
+        </form>
+        <h2>Show My Categories</h2>
+        <form action="/mySubjects" method="GET">
+            <label for="username">Enter your username:</label><br>
+            <input type="text" name="username"><br>
+            <input type="submit" value="Show My Categories">
+        </form>
+    </div>
+
+    <div class="myArticles">
+        <h2>My Articles</h2>
+        <h3>Articles related to your categories will be listed below:</h3>
+
+
+    </div>
+
+</div>

@@ -10,6 +10,7 @@ newsr.get('/',async(req,res)=>{
         var url = 'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=c311a717afc94a8a8ee4c60a86822b08';
 
         const news_get =await axios.get(url)
+        console.log(news_get)
         res.render('news',{articles:news_get.data.articles})
 
     } catch (error) {
