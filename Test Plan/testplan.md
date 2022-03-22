@@ -29,8 +29,9 @@ The Test Plan should be created to help the project's team members communicate 
   - CS684: News Feed WebApp
 
   ### Project Description
-  - This is web application and it is about News Feed. This application is designed for Sprint 2. This is descriptive document called test plan which includes 
-    details about the planning of the Sprint 2. 
+  - This is web application and it is about News Feed.
+  - This application is designed for Sprint 2. 
+  - This is descriptive document called test plan which includes details about the planning of the Sprint 2. 
 
 ## Test Items
 - Sign Up 
