@@ -41,10 +41,13 @@ Preyasha Patel
 - Login button 
 - Sign up button 
 - Sign out button
-- Landing page 
+- Landing page
+- Settings page 
 - Signed in page 
 - Signed out page
 - Registration Form
+- Profile settings
+- Database Storage
 
 ## Test Features
 Following are the test features to be tested:
@@ -53,6 +56,9 @@ Following are the test features to be tested:
 - Registration for a new user
 - Validation on sign out button
 - Redirecting to the other pages
+- User information being stored
+- Database being updated
+- Settings for individual users being stored
 
 ## Expected Response
 Listed below are the responses that should be expected for particular items:
@@ -65,6 +71,8 @@ Listed below are the responses that should be expected for particular items:
 7. User should see buttons to sign in or register on landing page.
 8. User should see logout successful signed out and return to the login page. 
 9. When user credentials are verified user is prompted for successful login and to landing page for login.
+10. User should be able to save settings for article preference
+11. 
 
 ## Testing Tasks 
 - Test plan and report to be prepared
@@ -72,9 +80,9 @@ Listed below are the responses that should be expected for particular items:
 - Manual test cases should be performed
 
 ## Responsibilities
-- We all will be working on test plan, test reports and test cases for the project.
-- Each member of the team going to work on each and every concepts and collaborate with each other.
-- We are going to help the other team members for completing the project.
+- Christopher will be working on Frontend/Backend mainly focusing on frontend
+- Erica will be working on Frontend/Backend mainly focusing on backend
+- Preyasha and Pooja will be documenting our test results and writing up test cases as we go.
 - If we face any challenges during the implementation of the application
   - Then, all four of us will try to solve those obstacles by contributing our time and effort.
 
@@ -83,7 +91,7 @@ Listed below are the responses that should be expected for particular items:
 - There should not be any critical bugs.
 
 ## Schedule
-- It will take the first week for designing the report and test cases and the other two weeks for coding and testing.
+- For designing the report and test cases, we will use mostly the first week and use the other weeks as necessary to update the test cases and results. For the remaining two weeks and forth will be dedicated for coding and testing.
 
 ## Github Links
 [Christopher](https://github.com/cs5581)\
