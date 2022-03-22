@@ -32,13 +32,16 @@ The Test Plan should be created to help the project's team members communicate 
   - This is web application and it is about News Feed.
   - This application is designed for Sprint 2. 
   - This is descriptive document called test plan which includes details about the planning of the Sprint 2. 
+  - The overall objective of this sprint to have users sign up/sign in to our website and view articles they are interested in.
+  - Users will also be able to save their settings so they view thier preferred articles on the dashboard
 
 ## Test Items
 - Sign Up 
 - Login 
 - Sign Out
 - Landing Page
-- Settings
+- Settings Page
+- Database Storage
 
 ## Test Features
   ### Sign Up page
@@ -103,13 +106,12 @@ The Test Plan should be created to help the project's team members communicate 
 - Manual test cases as well as unit test cases using TDD should be performed.
 
 ## Responsibilities
-- We all will be working on test plan, test reports and test cases for the project.
-- Each member of the team going to work on each and every concepts and collaborate with each other.
-- We are going to help the other team members for completing the project.
+- Christopher will be working on Frontend/Backend mainly focusing on frontend
+- Erica will be working on Frontend/Backend mainly focusing on backend
+- Preyasha and Pooja will be documenting our test results and writing up test cases as we go.
 - If we face any challenges during the implementation of the application
   - Then, all four of us will try to solve those obstacles by contributing our time and effort.
 
 ## Schedule
 
-- It will take the first week for designing the report and test cases.
-- Other two weeks for coding and testing.
+- For designing the report and test cases, we will use mostly the first week and use the other weeks as necessary to update the test cases and results. For the remaining two weeks and forth will be dedicated for coding and testing.
