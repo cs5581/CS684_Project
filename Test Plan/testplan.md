@@ -29,6 +29,8 @@ The Test Plan should be created to help the project's team members communicate 
   - CS684: News Feed WebApp
 
   ### Project Description
+  - This is web application and it is about News Feed. This application is designed for Sprint 2. This is descriptive document called test plan which includes 
+    details about the planning of the Sprint 2. 
 
 ## Test Items
 - Sign Up 
@@ -89,12 +91,24 @@ The Test Plan should be created to help the project's team members communicate 
   ### System Testing
   
 ## Pass/Fail Criteria
+- All the major functionality of the application should work as intended and the pass percentage of test cases should be more than 90%.
+- Each and every test case will have pass/fail criteria.
+- We regard a scenario under test to be Pass if the expected criteria are met, and Fail if they are not.
+- There should not be any critical bugs.
 
 ## Testing Tasks
+- Test plan and report to be prepared.
+- Execution of the tests to be done.
+- Manual test cases as well as unit test cases using TDD should be performed.
 
 ## Responsibilities
+- We all will be working on test plan, test reports and test cases for the project.
+- Each member of the team going to work on each and every concepts and collaborate with each other.
+- We are going to help the other team members for completing the project.
+- If we face any challenges during the implementation of the application
+  - Then, all four of us will try to solve those obstacles by contributing our time and effort.
 
 ## Schedule
 
-| # 	| Activity 	| Target Start Duration 	| Target End Duration 	| Responsibility 	|
-|---	|----------	|-----------------------	|---------------------	|----------------	|
+- It will take the first week for designing the report and test cases.
+- Other two weeks for coding and testing.
