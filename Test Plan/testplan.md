@@ -29,13 +29,19 @@ The Test Plan should be created to help the project's team members communicate 
   - CS684: News Feed WebApp
 
   ### Project Description
+  - This is web application and it is about News Feed.
+  - This application is designed for Sprint 2. 
+  - This is descriptive document called test plan which includes details about the planning of the Sprint 2. 
+  - The overall objective of this sprint to have users sign up/sign in to our website and view articles they are interested in.
+  - Users will also be able to save their settings so they view thier preferred articles on the dashboard
 
 ## Test Items
 - Sign Up 
 - Login 
 - Sign Out
 - Landing Page
-- Settings
+- Settings Page
+- Database Storage
 
 ## Test Features
   ### Sign Up page
@@ -89,12 +95,23 @@ The Test Plan should be created to help the project's team members communicate 
   ### System Testing
   
 ## Pass/Fail Criteria
+- All the major functionality of the application should work as intended and the pass percentage of test cases should be more than 90%.
+- Each and every test case will have pass/fail criteria.
+- We regard a scenario under test to be Pass if the expected criteria are met, and Fail if they are not.
+- There should not be any critical bugs.
 
 ## Testing Tasks
+- Test plan and report to be prepared.
+- Execution of the tests to be done.
+- Manual test cases as well as unit test cases using TDD should be performed.
 
 ## Responsibilities
+- Christopher will be working on Frontend/Backend mainly focusing on frontend
+- Erica will be working on Frontend/Backend mainly focusing on backend
+- Preyasha and Pooja will be documenting our test results and writing up test cases as we go.
+- If we face any challenges during the implementation of the application
+  - Then, all four of us will try to solve those obstacles by contributing our time and effort.
 
 ## Schedule
 
-| # 	| Activity 	| Target Start Duration 	| Target End Duration 	| Responsibility 	|
-|---	|----------	|-----------------------	|---------------------	|----------------	|
+- For designing the report and test cases, we will use mostly the first week and use the other weeks as necessary to update the test cases and results. For the remaining two weeks and forth will be dedicated for coding and testing.
