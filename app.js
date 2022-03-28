@@ -1,5 +1,9 @@
 const express = require('express')
+const session = require('express-session')
 const app=express()
+const passport = require('passport')
+
+app.use(passport.initialize());
 
 // require('dotenv').config();
 
@@ -31,7 +35,6 @@ const app=express()
 
 
 const mysql = require('mysql')
-const session = require('express-session')
 const axios = require('axios')
 const NewsAPI = require('newsapi');
 const newsapi = new NewsAPI('API_KEY');

@@ -24,8 +24,12 @@ app.locals.moment = moment;
 //import controllers
 const loginController = require('../controllers/loginController')
 const registerController=require('../controllers/registerController')
+const passportLocalController = require('../controllers/passportLocalController')
+const homePageController = require('../controllers/homePageController')
 
 
+
+passportLocalController.initPassportLocal()
 //import DB
 // const connection=require('../configs/connectDB')
 
@@ -52,13 +56,18 @@ app.use(session(
 
 
 
-newsr.get('/',async(req,res)=>{
+newsr.get('/',loginController.checkLoggedIn,
+
+async(req,res)=>{
+
     try {
         var url = 'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=c311a717afc94a8a8ee4c60a86822b08';
 
         const news_get =await axios.get(url)
-        console.log(news_get)
-        res.render('news',{articles:news_get.data.articles})
+        // console.log(news_get)
+        console.log("the user is " +req.user)
+        
+        res.render('news',{articles:news_get.data.articles,user:req.user})
 
     } catch (error) {
         if(error.response){
@@ -66,7 +75,8 @@ newsr.get('/',async(req,res)=>{
         }
 
     }
-})
+}
+)
 
 
 newsr.post('/search',async(req,res)=>{
@@ -106,7 +116,8 @@ newsr.get('/aboutUs',function(request,response) {
 })
 
 
-newsr.get('/login',loginController.getLoginPage
+newsr.get('/login',loginController.checkLoggedOut,
+loginController.getLoginPage
 )
 
 newsr.get('/signUp',registerController.getRegisterPage
@@ -175,12 +186,19 @@ newsr.get('/mySubjects',(req,res)=>{
 
 })
 
-newsr.get('/:id',function(request,response) {
-    response.send("get the id parameter" + request.params.id)
 
-})
+//passport
 
 //newsr.post 
+
+
+newsr.post('/login',passport.authenticate("local",{
+    successRedirect: "/",
+    failureRedirect: "/login",
+    successFlash: true,
+    failureFlash: true
+}));
+
 
 newsr.post('/login',function(request,response) {
     let username = request.body.username;
@@ -201,7 +219,9 @@ newsr.post('/login',function(request,response) {
 
 
                 response.status(200)
-                .send({message: `LOG IN SUCCESS ${username}`})
+                response.redirect('myDashboard')
+                // .send({message: `LOG IN SUCCESS ${username}`})
+
                 
 
             }
@@ -242,6 +262,11 @@ newsr.post('/mySubjects',(req,res)=>{
                 res.status(200)
                 .send(results)          
             }) 
+})
+
+newsr.get('/:id',function(request,response) {
+    response.send("get the id parameter" + request.params.id)
+
 })
 
 
