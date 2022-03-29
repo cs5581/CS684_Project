@@ -8,8 +8,6 @@
 - [Test Features](#test-features)
 - [Approach](#approach)
   - [Unit Testing](#unit-testing)
-  - [Integration Testing](#integration-testing)
-  - [System Testing](#system-testing)
 - [Pass/Fail Criteria](#passfail-criteria)
 - [Testing Tasks](#testing-tasks)
 - [Responsibilities](#responsibilities)
