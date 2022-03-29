@@ -1,24 +1,20 @@
 {
-  "name": "homework2swtesting",
-  "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "devStart": "nodemon server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.1",
+    "axios": "^0.26.1",
+    "body-parser": "^1.19.2",
     "ejs": "^3.1.6",
-    "express": "^4.17.2",
+    "express": "^4.17.3",
     "express-session": "^1.17.2",
-    "login": "^0.8.0",
-    "mysql": "^2.18.1"
+    "math": "^0.0.3",
+    "moment": "^2.29.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "newsapi": "^2.4.1",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
+  "scripts": {
+    "dev": "nodemon app.js"
   }
 }
