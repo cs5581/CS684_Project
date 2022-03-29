@@ -91,9 +91,11 @@ The Test Plan should be created to help the project's team members communicate 
 ## Approach
 
   ### Unit Testing
-  ### Integration Testing
-  ### System Testing
-  
+  - For Test Driven Development, each functionality will be unit tested by creating unit test cases prior to development. 
+  - Chai, a unit testing framework, will be used. 
+  - In this model, each developer must first build a test that fails before launching innovative functional code that is tested individually against specific blocks,
+    functions, procedures, or units of code.
+    
 ## Pass/Fail Criteria
 - All the major functionality of the application should work as intended and the pass percentage of test cases should be more than 90%.
 - Each and every test case will have pass/fail criteria.
@@ -106,12 +108,12 @@ The Test Plan should be created to help the project's team members communicate 
 - Manual test cases as well as unit test cases using TDD should be performed.
 
 ## Responsibilities
-- Christopher will be working on Frontend/Backend mainly focusing on frontend
-- Erica will be working on Frontend/Backend mainly focusing on backend
+- Christopher will be working on Frontend/Backend mainly focusing on frontend.
+- Erica will be working on Frontend/Backend mainly focusing on backend.
 - Preyasha and Pooja will be documenting our test results and writing up test cases as we go.
+- All of us also worked on unit testing.
 - If we face any challenges during the implementation of the application
   - Then, all four of us will try to solve those obstacles by contributing our time and effort.
 
 ## Schedule
-
 - For designing the report and test cases, we will use mostly the first week and use the other weeks as necessary to update the test cases and results. For the remaining two weeks and forth will be dedicated for coding and testing.
